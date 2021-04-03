@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale.h>
 
 using namespace std;
 
@@ -46,6 +47,7 @@ struct fl_type{
 
 int main()
 {
+    setlocale(LC_CTYPE, "");
     //Первое задание
     //Обьявление и инициализация типа int
     int a=2;
